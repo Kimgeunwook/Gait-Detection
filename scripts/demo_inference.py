@@ -7,6 +7,9 @@ import time
 
 import numpy as np
 import torch
+
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+
 from tqdm import tqdm
 
 from detector.apis import get_detector
@@ -154,7 +157,7 @@ if __name__ == "__main__":
     pose_model = builder.build_sppe(cfg.MODEL, preset_cfg=cfg.DATA_PRESET)
 
     print(f'Loading pose model from {args.checkpoint}...')
-    pose_model.load_state_dict(torch.load(args.checkpoint, map_location=args.device))
+    pose_model.load_state_dict(torch.load(args.checkpoint, map_location=args.device), strict=False)
 
     if len(args.gpus) > 1:
         pose_model = torch.nn.DataParallel(pose_model, device_ids=args.gpus).to(args.device)
