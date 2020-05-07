@@ -1,5 +1,6 @@
 import cv2
 import os
+import argparse
 
 # Read the video from specified path
 # dir = '/home/ugh/AlphaPose/200305_gait/'
@@ -41,24 +42,50 @@ import os
 # # Release all space and windows once done
 # cam.release()
 # cv2.destroyAllWindows()
-cam = cv2.VideoCapture('/home/ugh/AlphaPose/200302_gait/jiho_090.MOV')
-currentframe = 0
-while (True):
 
+
+def frame(input_dir):
+
+    print('start')
+    bkgrd = input_dir[-17:-14] + '-bkgrd-' + input_dir[-7:]
+
+    video = cv2.VideoCapture(input_dir)
+    currentframe = 0
+
+    if not os.path.exists('/home/ugh/AlphaPose/Background-Matting/frames/input'):
+        os.makedirs('/home/ugh/AlphaPose/Background-Matting/frames/input')
+    if not os.path.exists('/home/ugh/AlphaPose/Background-Matting/frames/output'):
+        os.makedirs('/home/ugh/AlphaPose/Background-Matting/frames/output')
+    while(True):
         # reading from frame
-        ret, frame = cam.read()
+        ret, frame = video.read()
+
         if ret:
             # if video is still left continue creating images
-            name = './oclussion_frame/'+str(currentframe)+'.jpg'
-            print('Creating...' + str(currentframe)+'.jpg')
+            name = '/home/ugh/AlphaPose/Background-Matting/frames/input/'+str(currentframe)+'_img.png'
+            print('Creating...' + str(currentframe)+'_img.png')
 
             # writing the extracted images
             cv2.imwrite(name, frame)
             currentframe += 1
-
         else:
             break
 
-# Release all space and windows once done
-cam.release()
-cv2.destroyAllWindows()
+    bg_dir = input_dir[:-17] + bkgrd
+    print(bg_dir)
+    video2 = cv2.VideoCapture(bg_dir)
+    count = 0
+    ret, frame = video2.read()
+
+    for i in range(currentframe):
+        name = '/home/ugh/AlphaPose/Background-Matting/frames/input/'+str(count)+'_back.png'
+        print('Creating...' + str(count)+'_back.png')
+        cv2.imwrite(name, frame)
+        count += 1
+
+    # Release all space and windows once done
+    video.release()
+    video2.release()
+    #cv2.destroyAllWindows()
+
+    return
