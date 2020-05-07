@@ -1,0 +1,22 @@
+---알파포즈 돌리는법---
+./scripts/inference.sh ./configs/coco/hrnet/256x192_w32_lr1e-3.yaml ./pretrained_models/hrnet_w32_256x192.pth ./3.jpg 
+
+---비디오를 프레임으로 나타내는거---
+ video_to_frame.py
+
+
+---실루엣 cnn돌리기---
+silhouette_CNN.py
+
+---gei만들기---
+make_gei
+
+
+-----사이즈 조절, 같은지 다른지 확률내는거------
+testttt
+
+------back-matting--------
+python test_segmentation_deeplab.py -i test/input
+python test_pre_process.py -i test/input
+python test_background-matting_image.py -m real-hand-held -i test/input/ -o test/output/ -tb test/background/0001.png
+
