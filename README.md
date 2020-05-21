@@ -29,12 +29,7 @@ Re-id (사람 재식별) 기술은 cctv 영상을 이용해 보행자의 통행�
 <div> <center><img src="https://user-images.githubusercontent.com/48522169/81587119-8a01da00-93f1-11ea-845e-6a31c15a101f.PNG" width="60%" height="60%" title="BackMatting " alt="실행1"> </img></div>
 <br/>
 ## Background-matting을 이용한 silhouette 생성
-@InProceedings{BMSengupta20,
-  title={Background Matting: The World is Your Green Screen},
-  author = {Soumyadip Sengupta and Vivek Jayaram and Brian Curless and Steve Seitz and Ira Kemelmacher-Shlizerman},
-  booktitle={Computer Vision and Pattern Regognition (CVPR)},
-  year={2020}
-}
+
 ‘Background Matting: The World is Your Green Screen’논문 이용
 자동으로 사람을 떼어내어 배경을 바꿔주는 시스템
 이 논문을 이용하여 우리 실루엣을 생성하는데 응용
