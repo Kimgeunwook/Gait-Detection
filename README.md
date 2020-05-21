@@ -70,7 +70,6 @@ MS COCO 데이터셋으로 학습되었고, 81개 Class에 대해 Detection 가�
 </br>
 
 ## Citation
-If you use this code for your research, please consider citing:
 ```
 @InProceedings{BMSengupta20,
   title={Background Matting: The World is Your Green Screen},
