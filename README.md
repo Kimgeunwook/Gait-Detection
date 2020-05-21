@@ -1,5 +1,5 @@
 # Gait-Based re-identification
-걸음걸이로 사람을 Re-identifiate 하는 프로젝트
+걸음걸이로 사람을 Re-identification 하는 프로젝트
 
 # 목차
 ### 1. 프로젝트 소개 
