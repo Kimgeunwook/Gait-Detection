@@ -21,17 +21,17 @@ Re-id (사람 재식별) 기술은 cctv 영상을 이용해 보행자의 통행�
 
 # 2. GEI 생성
 ## GEI
--GEI(Gait Energy Image)는 기존에 소개했던 대로 Gait Recognition 분야에서 가장 일찍부터 사용되었고, 여전히 애용되는 기술. 최근에는 여러 variation도 등장
--연속된 실루엣 영상의 평균값으로 만든 이미지
--장점 : noise의 영향을 잘 받지 않아 데이터 전처리가 쉽고 학습 시 정확도가 높음
+-GEI(Gait Energy Image)는 기존에 소개했던 대로 Gait Recognition 분야에서 가장 일찍부터 사용되었고, 여전히 애용되는 기술. 최근에는 여러 variation도 등장<br/>
+-연속된 실루엣 영상의 평균값으로 만든 이미지<br/>
+-장점 : noise의 영향을 잘 받지 않아 데이터 전처리가 쉽고 학습 시 정확도가 높음<br/>
 <br/>
 <br/>
 <div> <center><img src="https://user-images.githubusercontent.com/48522169/81587119-8a01da00-93f1-11ea-845e-6a31c15a101f.PNG" width="60%" height="60%" title="BackMatting " alt="실행1"> </img></div>
 <br/>
 ## Background-matting을 이용한 silhouette 생성
 
-‘Background Matting: The World is Your Green Screen’논문 이용
-자동으로 사람을 떼어내어 배경을 바꿔주는 시스템
+‘Background Matting: The World is Your Green Screen’논문 이용<br/>
+자동으로 사람을 떼어내어 배경을 바꿔주는 시스템<br/>
 이 논문을 이용하여 우리 실루엣을 생성하는데 응용
 <br/>
 <br/>
@@ -39,10 +39,10 @@ Re-id (사람 재식별) 기술은 cctv 영상을 이용해 보행자의 통행�
 <br/>
 <br/>
 ## Mask R-CNN 이용
-Mask R-CNN, Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick, arXiv:1703.06870 [cs.CV]
-https://github.com/matterport/Mask_RCNN
-널리 이용되고 있는 Object Detection 소스 중 하나
-MS COCO 데이터셋으로 학습되었고, 81개 Class에 대해 Detection 가능.
+Mask R-CNN, Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick, arXiv:1703.06870 [cs.CV]<br/>
+https://github.com/matterport/Mask_RCNN <br/>
+널리 이용되고 있는 Object Detection 소스 중 하나<br/>
+MS COCO 데이터셋으로 학습되었고, 81개 Class에 대해 Detection 가능.<br/>
 기존 학습된 모델에 Detect 하고싶은 물체를 100여장정도 작은 데이터만 추가적으로 학습시키는 방식으로 원하는 대로 customizing 가능
 <br/>
 <br/>
