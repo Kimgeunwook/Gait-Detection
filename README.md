@@ -87,4 +87,13 @@ MS COCO 데이터셋으로 학습되었고, 81개 Class에 대해 Detection 가�
   journal={GitHub repository},
   howpublished={\url{https://github.com/matterport/Mask_RCNN}},
 }
+
+@INPROCEEDINGS{7299016,
+  author={E. {Ahmed} and M. {Jones} and T. K. {Marks}},
+  booktitle={2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={An improved deep learning architecture for person re-identification}, 
+  year={2015},
+  volume={},
+  number={},
+  pages={3908-3916},}
 ```
