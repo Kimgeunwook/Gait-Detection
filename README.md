@@ -69,3 +69,22 @@ MS COCO 데이터셋으로 학습되었고, 81개 Class에 대해 Detection 가�
 </br>
 </br>
 
+## Citation
+If you use this code for your research, please consider citing:
+```
+@InProceedings{BMSengupta20,
+  title={Background Matting: The World is Your Green Screen},
+  author = {Soumyadip Sengupta and Vivek Jayaram and Brian Curless and Steve Seitz and Ira Kemelmacher-Shlizerman},
+  booktitle={Computer Vision and Pattern Regognition (CVPR)},
+  year={2020}
+}
+
+@misc{matterport_maskrcnn_2017,
+  title={Mask R-CNN for object detection and instance segmentation on Keras and TensorFlow},
+  author={Waleed Abdulla},
+  year={2017},
+  publisher={Github},
+  journal={GitHub repository},
+  howpublished={\url{https://github.com/matterport/Mask_RCNN}},
+}
+```
