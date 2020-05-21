@@ -40,6 +40,7 @@ Re-id (사람 재식별) 기술은 cctv 영상을 이용해 보행자의 통행�
 <br/>
 ## Mask R-CNN 이용
 Mask R-CNN, Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick, arXiv:1703.06870 [cs.CV]
+https://github.com/matterport/Mask_RCNN
 널리 이용되고 있는 Object Detection 소스 중 하나
 MS COCO 데이터셋으로 학습되었고, 81개 Class에 대해 Detection 가능.
 기존 학습된 모델에 Detect 하고싶은 물체를 100여장정도 작은 데이터만 추가적으로 학습시키는 방식으로 원하는 대로 customizing 가능
