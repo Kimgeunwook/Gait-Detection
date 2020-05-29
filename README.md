@@ -1,4 +1,4 @@
-# Gait-Based re-identification
+# Gait-Based re-identification(In Progress)
 Human Re-identification Based on Gait Analysis(GEI)
 
 # 목차
