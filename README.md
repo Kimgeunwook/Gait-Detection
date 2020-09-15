@@ -44,7 +44,7 @@ https://github.com/senguptaumd/Background-Matting
 <div> <center><img src="https://user-images.githubusercontent.com/48522169/81588047-e0234d00-93f2-11ea-953c-c0b3351612cf.PNG" width="120%" height="120%" title="BackMatting " alt="실행1"> </img></div>
 <br/>
 <br/>
-## Mask R-CNN 이용
+## Mask R-CNN 이용  
 <br/>
 Mask R-CNN, Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick, arXiv:1703.06870 [cs.CV]<br/>
 https://github.com/matterport/Mask_RCNN <br/>
