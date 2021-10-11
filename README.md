@@ -1,5 +1,4 @@
-# Gait-Based re-identification(In Progress)
-Human Re-identification Based on Gait Analysis(GEI)
+
 
 # Brief Introduction Video
 <a href="https://www.youtube.com/watch?v=nBtSBsJISKw">프로젝트 소개 영상</a>
