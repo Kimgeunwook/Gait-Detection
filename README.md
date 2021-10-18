@@ -21,7 +21,7 @@
           
 
 # 2.시스템 구성도  
-<img src="https://user-images.githubusercontent.com/48399897/136685593-79cda924-e855-46b1-aa53-64a7a4c575f4.PNG" width="100%" height="100%"  >  
+<img src="https://user-images.githubusercontent.com/48399897/136685593-79cda924-e855-46b1-aa53-64a7a4c575f4.PNG" width="200%" height="200%"  >  
 <br/>  
 <br/>  
 <br/>  
