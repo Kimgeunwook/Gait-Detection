@@ -7,14 +7,13 @@
 # 목차
 ### 1. 프로젝트 소개 
 ### 2. 시스템 구성도  
-### 3. re-id network  
-### 4. 정확도 분석
+### 3. 기술적 문제 해결  
 <br/>
 <br/>
 <br/><br/>
 
 # 1. 프로젝트 소개    
-영상에서 얻은 사람의 실루엣을 바탕으로 신경망에 입력하여 어떠한 사람과 가장 유사한지를 식별하는 것을 목표로 한다.
+***사람이 걷는 영상에서 얻은 실루엣을 바탕으로 re-id 신경망에 입력하여 어떠한 사람과 가장 유사한지 찾아내는 것을 목표로 한다.***
 <br/>
 <br/>
 <br/>
@@ -23,53 +22,34 @@
 
 # 2.시스템 구성도  
 <img src="https://user-images.githubusercontent.com/48399897/136685593-79cda924-e855-46b1-aa53-64a7a4c575f4.PNG" width="100%" height="100%"  >  
-<br/>
-<br/>
+<br/>  
+<br/>  
+<br/>  
+<br/>  
 
-# 3. re-id network  
-<div> <center><img src="https://user-images.githubusercontent.com/48522169/81587239-b9b0e200-93f1-11ea-9e88-425cd1339417.png" width="50%" height="40%" title="reidNet " alt="실행1"> </img></div>
-<br/>
-<br/>
+# 3. 기술적 문제 해결
+<details markdown="1">   
+<summary> 1. re-id net 신경망 구조 개선 (자세히 보기)</summary>  
 
-# 4. 정확도 분석   
+##  한정된 후보에서만 비교하던 분류 모델에서 확장 가능한 re-id 신경망 구조로 변경.    
 
-***1. 각도별 정확성***    
-<div>
-<img src="https://user-images.githubusercontent.com/48522169/81587086-7eaeae80-93f1-11ea-800f-3ffc732467b1.png" width="35%" height="35%" title="matrix" alt="실행1">     </img>  
-</div>    
-</br>
-</br>
-***2. 실제 정확성***    
-<div>
-<img src="https://user-images.githubusercontent.com/48522169/81588074-ec0f0f00-93f2-11ea-8414-a2b889793510.png" width="35%" height="35%" title="" alt="실행1">     </img>  
-</div>    
-</br>
-</br>
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137710480-9110f5e3-4680-42f1-8997-5f0201a4a179.PNG" width="72%" height="54%"  ></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137710473-1eddb1c5-de35-4a9f-aa96-10aee1cbd075.PNG" width="80%" height="60%"  ></p>
+</details> 
+<br/>  
+<br/>  
+<details markdown="1">   
+<summary> 2. 사람 실루엣 노이즈 개선 (자세히 보기)</summary>  
 
-## Citation
-```
-@InProceedings{BMSengupta20,
-  title={Background Matting: The World is Your Green Screen},
-  author = {Soumyadip Sengupta and Vivek Jayaram and Brian Curless and Steve Seitz and Ira Kemelmacher-Shlizerman},
-  booktitle={Computer Vision and Pattern Regognition (CVPR)},
-  year={2020}
-}
+##  Mask-Rcnn을 사용하여 노이즈 제거 및 실루엣 화질 개선.    
 
-@misc{matterport_maskrcnn_2017,
-  title={Mask R-CNN for object detection and instance segmentation on Keras and TensorFlow},
-  author={Waleed Abdulla},
-  year={2017},
-  publisher={Github},
-  journal={GitHub repository},
-  howpublished={\url{https://github.com/matterport/Mask_RCNN}},
-}
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137713461-be364fe7-f9f2-4552-a800-0849867ab334.PNG" width="64%" height="48%"  ></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137712551-146a459b-bb1f-4604-a687-7b56be865428.PNG" width="64%" height="48%"  ></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137713817-cef44614-ab17-4960-8ad3-d5c0d63d2c17.PNG" width="64%" height="48%"  ></p>
+</details> 
+<br/>  
+<br/>  
+<br/>  
+<br/>  
 
-@INPROCEEDINGS{7299016,
-  author={E. {Ahmed} and M. {Jones} and T. K. {Marks}},
-  booktitle={2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
-  title={An improved deep learning architecture for person re-identification}, 
-  year={2015},
-  volume={},
-  number={},
-  pages={3908-3916},}
-```
+
