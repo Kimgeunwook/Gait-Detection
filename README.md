@@ -21,7 +21,7 @@
           
 
 # 2.시스템 구성도  
-<img src="https://user-images.githubusercontent.com/48399897/136685593-79cda924-e855-46b1-aa53-64a7a4c575f4.PNG" width="200%" height="200%"  >  
+<img src="https://user-images.githubusercontent.com/48399897/136685593-79cda924-e855-46b1-aa53-64a7a4c575f4.PNG" width="100%" height="100%"  >  
 <br/>  
 <br/>  
 <br/>  
@@ -46,6 +46,9 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/48399897/137713461-be364fe7-f9f2-4552-a800-0849867ab334.PNG" width="64%" height="48%"  ></p>
 <p align="center"><img src="https://user-images.githubusercontent.com/48399897/137712551-146a459b-bb1f-4604-a687-7b56be865428.PNG" width="64%" height="48%"  ></p>
 <p align="center"><img src="https://user-images.githubusercontent.com/48399897/137713817-cef44614-ab17-4960-8ad3-d5c0d63d2c17.PNG" width="64%" height="48%"  ></p>
+<br/>  
+<br/>  
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137817989-17c049ed-5d7d-4c44-990d-3c83867c05f1.PNG" width="64%" height="48%"  ></p>
 </details> 
 <br/>  
 <br/>  
