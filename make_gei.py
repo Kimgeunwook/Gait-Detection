@@ -6,7 +6,6 @@ import scipy
 from skimage.transform import resize
 from PIL import Image
 import cv2
-# In[2]:
 err = []
 err2 = []
 dir = '/home/ugh/AlphaPose/GaitDatasetB-silh/'
@@ -28,9 +27,6 @@ for d in list:
                 print(str +'이미있음')
                 continue
 
-
-            # filename = '/home/ugh/AlphaPose/GaitDatasetB-silh/001/nm-06/126/'
-
             files = os.listdir(filename)
             # images = [imread('/home/ugh/AlphaPose/GaitDatasetB-silh/001/bg-01/162/' + f) for f in files]
             images = []
@@ -38,19 +34,6 @@ for d in list:
                 img = imread(filename + '/' + f)
                 images.append(img)
                 print(f)
-            # for f in files:
-            #     img=cv2.imread('/home/ugh/AlphaPose/GaitDatasetB-silh/001/bg-01/162/'+f,0)
-            #     kernel = np.ones((5, 5), np.uint8)
-            #     result = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
-            #     images.append(result)
-
-            # In[3]:
-
-            # plt.imshow(images[0])
-
-
-            # In[4]:
-
             def mass_center(img, is_round=True):
                 Y = img.mean(axis=1)
                 X = img.mean(axis=0)
@@ -69,9 +52,6 @@ for d in list:
                     y_e = np.where(img.mean(axis=1) != 0)[0].max()
                     t = int((y_e - y_s) * (newsize[1] / newsize[0]))
                     x_c, _ = mass_center(img)
-                    #     x_c = (x_s+x_e)//2
-                    # x_s = x_c - t // 2)
-                    # x_e = x_c + t // 2)
                     x_s = x_c - t // 2
                     x_e = x_c + t // 2
                     if (x_s < 0 or x_e > 320):
@@ -84,10 +64,6 @@ for d in list:
                     return None, False
 
 
-
-            # In[5]:
-
-            # images = [image_extract(i, (128, 96)) for i in images]
             images2 = []
             for i in images:
                 a, b = image_extract(i, (128, 96))
@@ -95,28 +71,12 @@ for d in list:
                     continue
                 images2.append(a)
 
-            # In[6]:
-            #
-            # plt.figure()
-            # for i in range(10):
-            #     plt.subplot(2, 5, i + 1)
-            #     plt.imshow(images2[i])
-            #
-            # plt.show()
-
-            # In[7]:
-
             try:
                 gei = np.mean(images2, axis=0)
                 plt.imsave(str, gei)
             except ValueError:
                 err2.append(filename)
 
-            # In[8]:
-
-
-
-            # plt.imshow(gei)
 
 
 print(err)
