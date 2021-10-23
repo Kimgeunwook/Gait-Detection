@@ -5,8 +5,6 @@ import keras
 from cv2 import *
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
-# from keras.layers.convolutional import Conv2D, MaxPooling2D
-# import PIL.Image as pilimg
 from PIL import Image
 import numpy as np
 import pickle
