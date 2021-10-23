@@ -84,7 +84,6 @@ class_names = ['BG', 'person', 'bicycle', 'car', 'motorcycle', 'airplane',
 
 def mask_rcnn(directory):
     # Load a random image from the images folder
-    print("캬캬캬캬"+str(directory))
     roi = []
     cycle = []
     file_names = os.listdir(directory)
@@ -99,8 +98,6 @@ def mask_rcnn(directory):
 
             # Visualize results
             r = results[0]
-            #print('ㅇ아아아아아아아아아아아')
-            #print(r)
             # person_list = []
             if (r['class_ids'].tolist()).count(1) != 1:
                 os.remove(directory + '/' + file)
@@ -140,17 +137,6 @@ def mask_rcnn(directory):
                     if not os.path.isfile(directory + '/' + bgfile):
                         break
 
-                    # visualize.display_instances(image, r['rois'], r['masks'], r['class_ids'],
-                    #                             class_names, r['scores'])
-
-            # from matplotlib import pyplot as plt
-            # for i in range(len(r['class_ids'])):
-            #     if r['class_ids'][i] == 1:
-            #         arr = np.array(r['masks'][:,:,i]).astype('float') * 255
-            #         arr=arr.astype('uint8')
-            #         print(np.shape(arr))
-            #         plt.imsave('/home/ugh/AlphaPose/vvvvvv.png', arr)
-            #         print(arr)
 
     return roi, cycle
 #####################################################################################################################
@@ -194,8 +180,6 @@ for aa in file_dir_path:
         video_to_frame.frame(aa + v)
 
         rois, gait = mask_rcnn(i)
-        print(rois)
-        print(gait)
         # print(len(rois))
         # print(len(gait))
 
@@ -206,7 +190,6 @@ for aa in file_dir_path:
             matting(i, o)
         except ValueError:
             continue
-        ##########################################gei 만들
         def mass_center(img, is_round=True):
             Y = img.mean(axis=1)
             X = img.mean(axis=0)
