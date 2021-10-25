@@ -33,8 +33,8 @@
 
 ##  한정된 후보에서만 비교하던 분류 모델에서 확장 가능한 re-id 신경망 구조로 변경.    
 
-<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137710480-9110f5e3-4680-42f1-8997-5f0201a4a179.PNG" width="72%" height="54%"  ></p>
-<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137710473-1eddb1c5-de35-4a9f-aa96-10aee1cbd075.PNG" width="80%" height="60%"  ></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137710480-9110f5e3-4680-42f1-8997-5f0201a4a179.PNG" width="100%" height="100%"  ></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137710473-1eddb1c5-de35-4a9f-aa96-10aee1cbd075.PNG" width="100%" height="100%"  ></p>
 </details> 
 <br/>  
 <br/>  
@@ -43,12 +43,12 @@
 
 ##  Mask-Rcnn을 사용하여 노이즈 제거 및 실루엣 화질 개선.    
 
-<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137713461-be364fe7-f9f2-4552-a800-0849867ab334.PNG" width="64%" height="48%"  ></p>
-<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137712551-146a459b-bb1f-4604-a687-7b56be865428.PNG" width="64%" height="48%"  ></p>
-<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137713817-cef44614-ab17-4960-8ad3-d5c0d63d2c17.PNG" width="64%" height="48%"  ></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137713461-be364fe7-f9f2-4552-a800-0849867ab334.PNG" width="100%" height="100%"  ></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137712551-146a459b-bb1f-4604-a687-7b56be865428.PNG" width="100%" height="100%"  ></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137713817-cef44614-ab17-4960-8ad3-d5c0d63d2c17.PNG" width="100%" height="100%"  ></p>
 <br/>  
 <br/>  
-<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137817989-17c049ed-5d7d-4c44-990d-3c83867c05f1.PNG" width="64%" height="48%"  ></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48399897/137817989-17c049ed-5d7d-4c44-990d-3c83867c05f1.PNG" width="100%" height="100%"  ></p>
 </details> 
 <br/>  
 <br/>  
